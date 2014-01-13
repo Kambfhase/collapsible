@@ -1,0 +1,24 @@
+.collapsable.hidden > div {
+  max-height: 0px;
+}
+
+.collapsable > div {
+  max-height: 500px;
+  overflow:hidden;
+}
+
+.collapsable > h3::before  {
+  content: "▼ ";
+}
+
+.collapsable.hidden > h3::before {
+  content: "▶ ";
+}
+
+* {
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+
